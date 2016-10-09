@@ -1,0 +1,108 @@
+<main id="main" role="main">
+    <div class="bg-brand">{{> slider}}</div>
+    <div class="bg-brand">
+        <div class="row bg-rose shadow show-for-large">
+            <div class="welcome small-12 columns">
+                <div class="row column info-block">
+                    <div class="small-12">
+                        <h3>Дом красоты <span class="site-name">Secret De Beautе</span> — территория Вашего совершенства!</h3>
+                    </div>
+                    <div class="small-12 medium-12 large-3 columns">
+                        <img src="{{root}}assets/img/logo-alternate.png" alt="{{siteinfo.name}}">
+                    </div>
+                    <div class="small-12 medium-12 large-9 columns">
+                        <p><span>Вы любите комфорт, европейский сервис и настоящий профессионализм?<span>
+                            Вы хотите выглядеть неотразимо, чтобы люди восхищенно умолкали при виде Вас?</p>
+                        <p>Добро пожаловать в наш салон!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-srtip tpadding show-for-large">
+        <div class="row container bg-dots tpadding">
+            {{> serviceCard}}
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <img class="logo-separator float-center" src="{{root}}assets/img/logo.png" alt="{{siteinfo.name}}" title="{{siteinfo.name}}">
+            </div>
+        </div>
+    </div>
+    <div class="bg-brand">
+        <div class="row site-header-container show-for-large">
+            <div class="info-block-2">
+                <p>
+                    Нас выбирают  — потому что мы лучшие! Дом красоты "Secret de Beaute`"  — это уютное место, в котором самые смелые и необычные мечты воплощаются в реальность.  Хотите удивить на первом свидании? Устраиваетесь на новую работу? Нужен новый образ? Или же просто хотите поболтать о новых тенденциях по уходу за собой, за чашечкой ароматного каппучино? Не вопрос!
+                </p>
+                <span>
+        <span>"Secret de Beaute`"</span> — это два этажа удовольствия, где можно расслабиться и насладиться профессиональным обслуживанием и приятным общением.
+      </span>
+            </div>
+        </div>
+        <div class="row column why-we">
+            <h2 class="text-center">Почему мы?</h2>
+            <div class="small-12 medium-12 large-4 columns why-we-block-wrapper">
+                <div class="why-we-block">
+                    <div class="why-we-block-content">
+                        <img src="{{root}}assets/img/why-we/icon1.png">
+                        <p>
+                            <b>В нашем салоне качественный сервис по доступным ценам.</b>
+                            <br><br>
+                            Дизайн выполнен в модном стиле PROVENCE. Удобная мебель и современное оборудование. У нас есть все для вашего комфорта.
+                            <br><br>
+                            Мы знаем, насколько важно, чтобы высокое качество было по доступной цене.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="small-12 medium-12 large-4 columns why-we-block-wrapper">
+                <div class="why-we-block">
+                    <div class="why-we-block-content">
+                        <img src="{{root}}assets/img/why-we/icon2.png">
+                        <p>
+                            <b>В салоне работают специалисты высокой квалификации.</b>
+                            <br><br>
+                            Они проходят серьезную профильную подготовку, постоянно совершенствуют мастерство и подтверждают квалификацию.
+                            <br><br>
+                            Мы знаем, насколько важно, найти мастера, которому можно доверить свое самое важное - красоту и здоровье.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="small-12 medium-12 large-4 columns why-we-block-wrapper">
+                <div class="why-we-block">
+                    <div class="why-we-block-content">
+                        <img src="{{root}}assets/img/why-we/icon3.png" alt="">
+                        <p>
+                            <b>В нашем салоне специалисты работают только на качественной косметической продукции.</b>
+                            <br><br>
+                            Все препараты мы закупаем только у дистрибьютеров, которые работают напрямую с производителями.
+                            <br><br>
+                            Мы знаем, насколько важно, не навредить клиенту.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <img class="float-center" src="{{root}}assets/img/why-we/line.jpg">
+        </div>
+    </div>
+
+    {{> discount}}
+    <div class="bg-dots hide-for-large">
+        <div class="container" style="max-width: 465px;">
+            <h3 class="tpadding">Женский зал</h3>
+            <img class="float-center" src="{{root}}assets/img/accordion-menu/women-hall.jpg" alt="Женский зал">
+            <div class="text-center tpadding"><a class="btn-salon" href="gallery.html">Перейти ко всем фото</a></div>
+        </div>
+    </div>
+    <div class="bg-brand">
+        <div class="row">
+            <img src="{{root}}assets/img/photo.jpg">
+        </div>
+    </div>
+    {{> map}}
+
+</main>

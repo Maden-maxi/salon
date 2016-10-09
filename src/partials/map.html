@@ -1,0 +1,36 @@
+<div class="bg-brand tpadding">
+    <div class="container text-center">
+        <h2>Где мы находимся?</h2>
+        <style>
+            #map{
+                height: 473px;
+                max-width: 960px;
+                margin: auto;
+            }
+        </style>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: {lat: 49.226748, lng: 28.432516}
+                });
+                var image = 'assets/img/marker.png';
+                var marker = new google.maps.Marker({
+                    position: {lat: 49.226248, lng: 28.432516},
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: image,
+                });
+                var contentString = 'переулок Красный 28а';
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcWgJzlySLe8mFtHMV6FSNLoZ_gqWoziw&callback=initMap"></script>
+    </div>
+</div>

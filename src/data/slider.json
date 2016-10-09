@@ -1,0 +1,24 @@
+{
+  "slides": {
+    "Женский зал": "women-hall.jpg",
+    "Мужской зал": "men-hall.jpg",
+    "Косметология": "cosmetology.jpg",
+    "Солярий": "solarium.jpg",
+    "Brow bar": "brow-bar.jpg",
+    "Маникюр": "manicure.jpg",
+    "Педикюр": "pedicure.jpg",
+    "Массаж": "massage-room.jpg",
+    "Тату и татуаж": "tatoo-and-tatooaje.jpg"
+  },
+  "thumbs": {
+    "Женский зал": "women-hall_thumb.jpg",
+    "Мужской зал": "men-hall_thumb.jpg",
+    "Косметология": "cosmetology_thumb.jpg",
+    "Солярий": "solarium_thumb.jpg",
+    "Brow bar": "brow-bar_thumb.jpg",
+    "Маникюр": "manicure_thumb.jpg",
+    "Педикюр": "pedicure_thumb.jpg",
+    "Массаж": "massage-room_thumb.jpg",
+    "Тату и татуаж": "tatoo-and-tatooaje_thumb.jpg"
+  }
+}

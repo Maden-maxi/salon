@@ -1,0 +1,25 @@
+<footer class="site-footer">
+    <div class="row">
+        <div class="small-12 container">
+            <div class="container">
+                <div class="text-center site-social">
+
+                    {{#each menus.social as |link icon|}}
+                        <a href="{{link}}"><span class="salon-icon salon-{{icon}}"></span></a>
+                    {{/each}}
+
+                </div>
+                {{> mainMenu}}
+            </div>
+        </div>
+        <div class="title-bar hide-for-small-only hide-for-medium-only" data-responsive-toggle="menu-services-footer" data-hide-for="large">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">Наши Услуги</div>
+        </div>
+        <nav id="menu-services-footer" class="menu-services text-black hide-for-small-only hide-for-medium-only">
+            {{> serviceMenu}}
+        </nav>
+
+    </div>
+
+</footer>

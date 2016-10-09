@@ -1,0 +1,21 @@
+<ul class="vertical menu menu-services-accordion" data-accordion-menu>
+    {{#each services as |value key|}}
+    <li class="accordion-item">
+        <a href="#">{{key}}</a>
+        <ul class="menu vertical nested">
+            <img class="thumbnail" src="{{root}}assets/img/accordion-menu/{{value.img}}" alt="{{key}}" title="Женский зал">
+            <div>
+                <p>{{value.paragraph1}}</p>
+                <p>{{value.paragraph1}}</p>
+                <p><b>{{value.type_of_service}}</b></p>
+                <ul>
+                    {{#each value.list}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                {{> discount}}
+            </div>
+        </ul>
+    </li>
+    {{/each}}
+</ul>

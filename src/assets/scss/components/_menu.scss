@@ -1,0 +1,133 @@
+.menu-main{
+  .menu{
+    padding: 20px 0;
+    .active{
+      background-color: $color__light;
+      color: #000000;
+    }
+  }
+  border-top: 3px solid #40aca3;
+  li{
+    a{
+
+      border-radius: 10px;
+      transition: all .4s;
+      &:hover{
+        background-color: $color__light;
+        color: #000000;
+      }
+    }
+  }
+}
+.menu-services{
+  text-align: center;
+  background: linear-gradient( to bottom, rgba(222, 251, 249, 1) , rgba(179, 214, 210, 0.6) );
+  .large-horizontal{
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
+  }
+  &-accordion{
+    display: none;
+    .discount{
+      background-image: url('../img/form-block.jpg');
+      padding: 30px 0;
+      &-title{
+        font-size: 1.25rem;
+      }
+      &-name{
+        font-size: 1.5rem;
+      }
+      &-time{
+        font-size: 0.9rem;
+      }
+      &-desc{
+        font-size: 0.8rem;
+      }
+      &-action{
+        padding: 20px 10px;
+        input{
+          width: 100%;
+          height: 35px;
+          font-size: 1rem;
+        }
+      }
+      &-list{
+        display: none;
+        margin: 0;
+        padding: 20px 10px;
+        li{
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      background: url('../img/pattern.jpg');
+    }
+    .accordion-item{
+      background: url(../img/line.png) repeat-x 0 bottom;
+      max-width: 480px;
+      margin: auto;
+      .menu.vertical.nested{
+        max-width: 500px;
+        margin: 0px auto;
+        text-align: left;
+      }
+      li {
+        text-align: left !important;
+        color: #723636;
+        background: url("../img/point.png") no-repeat 0% 25%;
+        padding: 0 0 13px 20px;
+        list-style-type: none;
+      }
+    }
+    .is-accordion-submenu-parent > a::after{
+      content: '\f101';
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'salon-icon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      width: auto;
+      height: auto;
+      border: none;
+      border-color: transparent;
+      border-style: none;
+      transition: all .4s;
+      font-size: 2rem;
+      top: 15%;
+    }
+    .is-accordion-submenu-parent[aria-expanded='true'] > a::after{
+      transform: rotate( 90deg);
+    }
+  }
+  .menu{
+    width: 100%;
+    text-align: center;
+  }
+  li{
+    text-align: center;
+    a{
+      text-transform: uppercase;
+      @media screen and (max-width: 1024px) {
+        text-align: left;
+        padding-right: 20px;
+
+      }
+      &:hover{
+        color: $color__dark-text;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+}

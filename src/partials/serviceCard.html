@@ -1,0 +1,20 @@
+{{#each services as |value key|}}
+<div class="small-12 medium-6 columns service-card">
+  <div class="service-wrapper">
+    <h3 class="service-title">{{key}}</h3>
+    <div class="service-content">
+      <img class="service-img" src="{{root}}assets/img/accordion-menu/{{value.img}}" alt="{{key}}">
+      <div class="service-desc bg-dots">
+        <p>{{value.paragraph1}}</p>
+        <p>{{value.paragraph2}}</p>
+        <b>{{value.type_of_service}}</b>
+        <ul>
+          {{#each value.list}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}

@@ -1,0 +1,48 @@
+body{
+  font-family: 'PT Sans', Arial, sans-serif !important;
+}
+.site{
+  &-header{
+    background-color: $background-brand;
+
+    &-container{
+      background-image: url('../img/header.jpg');
+    }
+  }
+  &-logo{
+
+  }
+  &-title{
+    font-size: 1.5625rem;
+    color: #ce5a7a;
+  }
+  &-footer{
+    background-color: $background-brand;
+    .menu{
+      &-main{
+        border-top: none;
+        border-bottom: 3px solid $color__light;
+      }
+      &-services{
+        padding: 10px 0;
+        background: transparent;
+      }
+    }
+  }
+  &-social{
+    font-size: 3rem;
+    padding-top: 20px;
+    a{
+      color: $color__light;
+      transition: all .4s ease-out;
+      &:hover{
+        color: #ffffff;
+      }
+    }
+  }
+}
+.welcome{
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 10px;
+}

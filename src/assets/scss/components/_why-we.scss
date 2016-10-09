@@ -1,0 +1,24 @@
+.why-we{
+  &-block{
+    text-align: center;
+    background-image: url('../img/why-we/item-big.jpg');
+    background-size: 100% 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    &-content{
+      padding: 20px;
+      min-height: 600px;
+      @media screen and (max-width: 1024px) {
+        min-height: auto;
+      }
+    }
+    &-wrapper{
+      @media screen and (min-width: 1024px) {
+        &:nth-child(even){
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

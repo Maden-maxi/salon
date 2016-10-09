@@ -1,0 +1,42 @@
+<!-- The rest of your HTML is down here. -->
+<header class="site-header">
+    <div class="row site-header-container shadow">
+        <div class="small-12 container">
+            <div class="row column">
+                <div class="large-3 columns">
+                    <div class="contact-info align-middle">
+                        <h4>Дом красоты</h4>
+                        <div>Пн-Сб: 9:00 - 21:00</div>
+                        <div>Вс: 10:00 - 17:00</div>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+
+                    <img class="site-logo float-center" src= "{{root}}assets/img/logo.png" alt="{{siteinfo.name}}" title="{{siteinfo.name}}">
+
+                    <h1 class="text-center site-title"><strong><em>{{siteinfo.slogan}}</em></strong></h1>
+
+                </div>
+                <div class="text-right large-3 columns">
+                    <div class="row column align-middle contact-info">
+                        <div class="medium-3 large-12 columns"><span class="salon-icon salon-phone"></span> 095 22 62 616</div>
+                        <div class="medium-3 large-12 columns"><span class="salon-icon salon-phone"></span> 068 22 62 616</div>
+                        <div class="medium-3 large-12 columns">г. Винница</div>
+                        <div class="medium-3 large-12 columns">переулок Красный 28а</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {{> mainMenu}}
+        </div>
+        <!--<div class="title-bar" data-responsive-toggle="menu-services" data-hide-for="large">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">Нашы услуги</div>
+        </div>-->
+        <nav id="menu-services" class="menu-services text-black">
+            {{> serviceMenu}}
+            {{> serviceAccordion}}
+        </nav>
+    </div>
+</header>

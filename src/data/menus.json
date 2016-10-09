@@ -1,0 +1,15 @@
+{
+  "main": {
+    "Главная": "/",
+    "Акции": "sales.html",
+    "Галерея": "gallery.html",
+    "Контакты": "contacts.html"
+  },
+  "services": ["Женский зал", "Мужской зал", "Косметология", "Солярий", "Brow bar", "Маникюр", "Педикюр", "Массаж", "Тату и татуаж"],
+
+  "social": {
+    "vk": "https://new.vk.com/secretdebeaute",
+    "facebook2": "https://www.facebook.com/groups/222148771449712/?fref=ts",
+    "instagram": "https://www.instagram.com/secret.de.beaute/"
+  }
+}

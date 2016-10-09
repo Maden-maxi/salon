@@ -1,0 +1,31 @@
+.service{
+  &-card{
+    margin: 20px 0;
+    &:hover .service-desc{
+      display: block;
+    }
+  }
+  &-wrapper{
+    @media screen and (max-width: 640px) {
+      max-width: 469px;
+      margin: auto;
+    }
+  }
+  &-content{
+    position: relative;
+  }
+  &-desc{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    border: 15px solid #fff;
+    background-color: #fff;
+    background-origin: padding-box;
+  }
+  &-img{
+    margin: auto;
+  }
+}

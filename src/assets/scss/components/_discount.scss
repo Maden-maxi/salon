@@ -1,0 +1,103 @@
+#discount{
+  background-color: #dcfbf9;
+}
+.discount{
+  background-image: url('../img/form.jpg');
+  background-size: 100% 100%;
+  padding: 80px;
+  &-title{
+    font-size: 2.375rem;
+    span{
+      color: #c13a5f;
+    }
+  }
+  &-name{
+    font-size: 2.9375rem;
+  }
+  &-time{
+    font-size: 1.3125rem;
+  }
+  &-action{
+    input{
+      border-radius: 8px;
+      width: 234px;
+      max-width: 234px;
+      height: 71px;
+      max-height: 71px;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      font-family: $font-philosopher, Arial, sans-serif;
+      font-size: 1.25rem;
+      transition: all 0.3s;
+      margin: 5px auto;
+    }
+    @media screen and (max-width: 640px){
+      padding: 20px 0px;
+    }
+    padding: 20px 60px;
+    input[type="submit"]{
+      color: #000;
+      background: linear-gradient(to top, #a7e1f8, #6ec1e1);
+      border: 1px solid #6a6e8c;
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+  &-list{
+    padding: 20px 60px;
+    @media screen and (max-width: 640px){
+      padding: 20px 20px;
+    }
+    li{
+      list-style-position: inside;
+    }
+  }
+}
+@media screen and (max-width:  768px){
+  .discount{
+    padding: 50px 0px;
+    background-image: url('../img/form-block.jpg');
+    &-title{
+      font-size: 2rem;
+    }
+    &-name{
+      font-size: 1rem;
+    }
+    &-time{
+      font-size: 0.9rem;
+    }
+    &-action{
+      padding: 20px 0;
+      input{
+        width: auto;
+        height: 35px;
+        font-size: 1rem;
+      }
+    }
+    &-list{
+      display: none;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+.btn-salon{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-family: $font-philosopher, Arial, sans-serif;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  margin: 5px auto;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  background: linear-gradient(to top, #a7e1f8, #6ec1e1);
+  border: 1px solid #6a6e8c;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
